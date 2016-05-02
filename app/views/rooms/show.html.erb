@@ -1,4 +1,10 @@
 <h1>Chat</h1>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+
 <div id="messages">
   <%= render @messages %>
 </div>
+
+<footer>
+  <input type="text" id="message_input">
+</footer>

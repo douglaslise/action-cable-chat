@@ -1,3 +1,9 @@
 <div id="message">
-  <p><%= message.content %></p>
+  <a href="" class="message_user"><%= message.user.email %></a>
+  <span class="message_timestamp">
+    <%= message.created_at %>
+  </span>
+  <span class="message_content">
+    <%= message.content %>
+  </span>
 </div>
